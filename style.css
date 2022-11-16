@@ -1,0 +1,85 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1608506169128-S6KYNEV61LEP5MS1UIH4/traditional-food-around-the-world-Travlinmad.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar{
+    width: 95%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+  width: 110px;
+  cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#ffd32a;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50);
+    text-align: center;
+    color: #FFFFFF;
+  }
+  button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    background: transparent;
+    color: #FFFFFF ;
+    cursor: pointer;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid yellow;
+  }
+  
+  .hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
